@@ -20,7 +20,7 @@ namespace Phonechai.Repository
 
     public class PhoneRepository: BaseRepository
     {
-        public PhoneRepository(BusinessDbContext db) : base(db)
+        public PhoneRepository(BusinessDbContext db) : base(db) //Need a bit theorytical knowledge
         {
         }
 

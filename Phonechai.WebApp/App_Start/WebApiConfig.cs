@@ -17,8 +17,11 @@ namespace Phonechai.WebApp
             // Configure Web API to use only bearer token authentication.
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
+            
+            //Enable Json
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
+            
             // Web API routes
             config.MapHttpAttributeRoutes();
 
